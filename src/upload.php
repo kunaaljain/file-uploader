@@ -5,7 +5,7 @@
 <?php
 
 $ds = DIRECTORY_SEPARATOR;
-$storeFolder = 'uploads'; 
+$storeFolder = '..' . $ds . 'uploads'; 
 if (!empty($_FILES)) {
     $tempFile = $_FILES['file']['tmp_name'];
     $targetPath = dirname( __FILE__ ) . $ds. $storeFolder . $ds;
